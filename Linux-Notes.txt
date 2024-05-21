@@ -1,0 +1,167 @@
+
+	Introduction To Linux
+	Linux File System
+	User Management
+	File Permission Management
+	Package Management
+	Troubleshooting Commands
+	General Commands – cp, rsync
+	Editors – VI, VIM, Nano
+	Shell Scripting
+
+
+Linux Commands:
+===============
+
+1. Create directory or folder
+	# mkdir folder_name
+	e.g. # mkdir demo-folder
+ 
+2. Check present working directory path 
+	# pwd
+
+3. Create empty file 
+	# touch file_name
+	e.g. touch demo-file.txt
+
+4. Change directory
+	# cd dir_path
+	e.g. cd /home/username
+	
+5. Copy files from one location to another location
+	# cp -rvp source_file_path target_file_path
+	e.g # cp -rvp source_file target_file
+
+6. Copy one time whole data and then incremental changes
+	# rsync -avz source_file target_file_path
+	e.g.# rsync -avh source/ target
+	
+7. Move directory or files from one to another location or rename
+	# mv file_name new_location_path
+	e.g. mv demo-file.txt /home/demo-user/
+	e.g. # mv file_old file_new
+	
+8. Check list of files and directory
+	# ls
+	
+9. Check file content
+	# cat file_name
+
+10. Check last 10 lines from file
+	# tail -n 10 demo_file.txt
+	# tail -f demo_file.txt
+
+11. Check IP address In Linux
+	# ifconfig
+	
+12. Check list of open ports
+	# netstat -tlupn
+
+13. Remove directory or files
+	# rm -rf dir_name
+	# rm -rf file_name
+	
+14. Check disk space utilization
+	# df -h
+	
+15. Check particular folder or file size
+	# du -sh dir_name
+	# du -sh file_name
+	
+16. Check total memory & utilization status	
+	# free -tm
+	
+17. Check system uptime
+	# uptime
+	
+18. Create system user 
+	# useradd user_name
+
+19. Download remote url base package
+	# wget url
+	# curl url
+	
+20. Install packages
+	# yum install nginx
+
+21. Check list of process
+	# ps -auxf
+
+22. Check system load status, process, uptime 
+	# top
+	# htop 
+
+23. Terminate or kill any specific process
+	# kill -9 process_id     ( You can get process id by command # ps -auxf )
+
+24. Check who logged in current user
+	# whoami
+	
+25. Check parameter options for particular commands
+	# man command
+	# command --help
+	e.g. man netstat   or cp --help
+	
+26. Shutdown the system
+	# poweroff 
+	# init 0
+	# shutdown
+	
+27. Reboot system
+	# reboot
+	# init 6
+	# shutdown -r
+	
+28. Check system date
+	# date
+	
+29. Find any keyword from file
+	# grep
+	e.g. grep "error" logfile.txt
+	
+30. How to compress folder 
+	# zip -r foldername.zip dir_name
+	e.g. zip -r demo_folder.zip demo_folder
+	
+31. Change permission for folders or files
+	# chmod -r 755 folder_name 
+	e.g. chmod -r 755 demo_folder
+	
+32. Change ownership of folder or file
+	# chown -R username:username folder_name
+	
+33. How to give special permission for folder or file
+	# setfacl -m ec2-user:rwx backup
+	# getfacl backup    <--- to check permission applied or not
+
+
+Recommended Sites For Linux Learning
+------------------------------------
+
+https://www.geeksforgeeks.org/
+https://www.thegeekstuff.com/
+https://www.tecmint.com/
+https://www.tutorialspoint.com/index.htm
+========================================
+
+Ref: 
+https://www.geeksforgeeks.org/linux-tutorial/
+https://www.javatpoint.com/linux-tutorial
+https://www.javatpoint.com/linux-file-system
+https://www.geeksforgeeks.org/how-to-create-a-shell-script-in-linux/
+https://www.javatpoint.com/linux-commands
+https://www.javatpoint.com/vi-editor
+https://www.geeksforgeeks.org/permissions-in-linux/
+https://www.geeksforgeeks.org/advance-file-permissions-in-linux/
+https://www.geeksforgeeks.org/linux-setfacl-command-with-example/
+https://www.geeksforgeeks.org/linux-directory-structure/
+https://www.javatpoint.com/linux-distributions
+https://www.freecodecamp.org/news/bash-scripting-tutorial-linux-shell-script-and-command-line-for-beginners/
+https://www.freecodecamp.org/news/shell-scripting-crash-course-how-to-write-bash-scripts-in-linux/
+https://www.tutorialspoint.com/execute_bash_online.php
+=====================================================================
+
+
+
+
+
